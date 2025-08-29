@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Santiago - Portafolio Estudiantil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="particles" id="particles"></div>
+
+    <!-- Header -->
+    <header id="header">
+        <a href="#" class="logo">Santiago</a>
+        <div class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav id="nav">
+            <a href="#home" class="active">Inicio</a>
+            <a href="#about">Acerca de</a>
+            <a href="#skills">Habilidades</a>
+            <a href="#projects">Proyectos</a>
+            <a href="#courses">Cursos</a>
+            <a href="#contact">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="home-img">
+            <img src="foto.jpeg" alt="Santiago - Estudiante de Programación">
+        </div>
+        <div class="home-content">
+            <h1>Hola, soy <span>Santiago</span></h1>
+            <h3 class="typing-text">Soy un <span id="typing"></span></h3>
+            <p>Soy un estudiante apasionado por la programación y el desarrollo web. 
+               Actualmente aprendiendo nuevas tecnologías y construyendo proyectos 
+               para mejorar mis habilidades. Me encanta resolver problemas con código 
+               y crear experiencias digitales interesantes.</p>
+            <div class="social-icons">
+                <!-- Added data-tooltip attributes for hover tooltips -->
+                <a href="https://github.com/Sett353" target="_blank" data-tooltip="GitHub - ¡Dale estrella!"><i class="fa-brands fa-github"></i></a>
+                <a href="https://instagram.com/santiago_av23" target="_blank" data-tooltip="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/santi.arenasvelez" target="_blank" data-tooltip="facebook"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+            <div class="home-buttons">
+                <a href="#contact" class="btn">Contáctame</a>
+                <button id="star-repos" class="btn btn-secondary">⭐ Dar Estrella a GitHub</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2 class="section-title">Acerca de Mí</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Estudiante de Programación & Futuro Desarrollador</h3>
+                <p>Soy un estudiante entusiasta de la programación con conocimientos sólidos en desarrollo web. 
+                   Aunque aún estoy en proceso de aprendizaje, he completado varios cursos y proyectos que 
+                   demuestran mi dedicación y progreso constante.</p>
+                <p>Me especializo en tecnologías frontend como HTML, CSS y JavaScript, y estoy expandiendo 
+                   mis conocimientos hacia el desarrollo full-stack. Cada día es una oportunidad para 
+                   aprender algo nuevo y mejorar mis habilidades.</p>
+                <p>Mi objetivo es convertirme en un desarrollador profesional y contribuir a proyectos 
+                   que tengan un impacto positivo. Estoy abierto a oportunidades de aprendizaje, 
+                   prácticas profesionales y colaboraciones.</p>
+            </div>
+            <div class="about-stats">
+                <div class="stat-item">
+                    <h3>1+</h3>
+                    <p>Años Estudiando</p>
+                </div>
+                <div class="stat-item">
+                    <h3>2+</h3>
+                    <p>Proyectos de Práctica</p>
+                </div>
+                <div class="stat-item">
+                    <h3>4+</h3>
+                    <p>Cursos Completados</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <h2 class="section-title">Mis Habilidades</h2>
+        <div class="skills-grid">
+            <div class="skill-card" data-level="intermedio">
+                <i class="fab fa-html5"></i>
+                <h3>HTML5</h3>
+                <p>Estructura semántica</p>
+                <div class="skill-level">Intermedio</div>
+            </div>
+            <div class="skill-card" data-level="intermedio">
+                <i class="fab fa-css3-alt"></i>
+                <h3>CSS3</h3>
+                <p>Diseño responsivo</p>
+                <div class="skill-level">Intermedio</div>
+            </div>
+            <div class="skill-card" data-level="basico">
+                <i class="fab fa-js-square"></i>
+                <h3>JavaScript</h3>
+                <p>Programación dinámica</p>
+                <div class="skill-level">Básico-Intermedio</div>
+            </div>
+            <div class="skill-card" data-level="basico">
+                <i class="fab fa-react"></i>
+                <h3>React</h3>
+                <p>Aprendiendo componentes</p>
+                <div class="skill-level">Básico</div>
+            </div>
+            <div class="skill-card" data-level="basico">
+                <i class="fab fa-node-js"></i>
+                <h3>Node.js</h3>
+                <p>Backend básico</p>
+                <div class="skill-level">Básico</div>
+            </div>
+            <div class="skill-card" data-level="basico">
+                <i class="fas fa-database"></i>
+                <h3>MongoDB</h3>
+                <p>Base de datos NoSQL</p>
+                <div class="skill-level">Básico</div>
+            </div>
+            <div class="skill-card" data-level="basico">
+                <i class="fab fa-git-alt"></i>
+                <h3>Git</h3>
+                <p>Control de versiones</p>
+                <div class="skill-level">Básico</div>
+            </div>
+            <div class="skill-card" data-level="intermedio">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Responsive</h3>
+                <p>Diseño adaptable</p>
+                <div class="skill-level">Intermedio</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <h2 class="section-title">Mis Proyectos de Práctica</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">📝</div>
+                <div class="project-content">
+                    <h3 class="project-title">Lista de Tareas Interactiva</h3>
+                    <p class="project-description">Mi primer proyecto usando PHP, HTML, CSS y JavaScript vanilla. Guardando los datos en el localStorage.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">LocalStorage</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Sett353/tienda-basica" title="Ver en GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" title="Ver Demo"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">📝</div>
+                <div class="project-content">
+                    <h3 class="project-title">Lista de Tareas Interactiva</h3>
+                    <p class="project-description">Aplicación web para gestionar tareas diarias con funcionalidades de agregar, editar y eliminar. Mi primer proyecto con manipulación del DOM.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">DOM</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Sett353/todo-app" title="Ver en GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" title="Ver Demo"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses" id="courses">
+        <h2 class="section-title">Cursos Completados</h2>
+        <div class="courses-timeline">
+            
+                
+                <div class="course-item">
+                <div class="course-content">
+                    <div class="course-date">2025</div>
+                    <h3 class="course-title">Responsive Web Design</h3>
+                    <div class="course-institution">I.E Federico Carrasquilla</div>
+                    <div class="course-status completed">✅ Completado</div>
+                    <p class="course-description">Diseño de sitios web interactivos y atractivos con HTML5, CSS y JS.</p>
+                </div>
+            </div>  
+            
+            <div class="course-item"> 
+                <div class="course-content">
+                    <div class="course-date">2025</div>
+                    <h3 class="course-title">Bases de datos en SQL</h3>
+                    <div class="course-institution">I.E Federico Carrasquilla</div>
+                    <div class="course-status completed">✅ Completado</div>
+                    <p class="course-description">Explicación de como crear una base de datos en SQL.</p>
+                </div>
+            </div>
+
+           
+
+            <div class="course-item">
+                <div class="course-content">
+                    <div class="course-date">2025</div>
+                    <h3 class="course-title">Fundamentos de bases de datos</h3>
+                    <div class="course-institution">I.E Federico Carrasquilla</div>
+                    <div class="course-status completed">✅ Completado</div>
+                    <p class="course-description">Introducción introducción y explicación de las bases de datos.</p>
+                </div>
+            </div>
+            
+            <div class="course-item">
+                <div class="course-content">
+                    <div class="course-date">2025</div>
+                    <h3 class="course-title">Introducción a JavaScript</h3>
+                    <div class="course-institution">I.E Federico Carrasquilla</div>
+                    <div class="course-status completed">✅ Completado</div>
+                    <p class="course-description">Explicación de JavaScript, para que sirve y ciertas funcionalidades de este.</p>
+                </div>
+            </div>
+
+            <div class="course-item">
+                <div class="course-content">
+                    <div class="course-date">2024</div>
+                    <h3 class="course-title">Introducción a Java</h3>
+                    <div class="course-institution">I.E Federico Carrasquilla</div>
+                    <div class="course-status completed">✅ Completado</div>
+                    <p class="course-description">EXplicación del programa, tipos de datos que existen en este y practicas en el programa Netbeans</p>
+                </div>
+            </div>
+
+            <div class="course-item">
+                <div class="course-content">
+                    <div class="course-date">2024</div>
+                    <h3 class="course-title">Introducción a html y css </h3>
+                    <div class="course-institution">I.E Federico Carrasquilla</div>
+                    <div class="course-status completed">✅ Completado</div>
+                    <p class="course-description">Desarrollo frontend con html, creación de las primeras páginas de practica con estilos únicos e interactivos.</p>
+                </div>
+            </div>
+
+            <div class="course-item">
+                <div class="course-content">
+                    <div class="course-date">2024</div>
+                    <h3 class="course-title">Fundamentos de Programación</h3>
+                    <div class="course-institution">I.E Federico Carrasquilla</div>
+                    <div class="course-status completed">✅ Completado</div>
+                    <p class="course-description">Lógica de programación, algoritmos básicos, estructuras de datos y resolución de problemas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Section -->
+    <section class="social-section">
+        <h3>Conéctate Conmigo</h3>
+        <p>Sígueme en mis redes sociales y no olvides dar una estrella ⭐ a mis repositorios en GitHub</p>
+        <div class="social-links">
+            <!-- Added data-tooltip attributes for social section tooltips -->
+            <a href="https://github.com/Sett353" target="_blank" class="social-link github-link" data-tooltip="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://instagram.com/santiago_av23" target="_blank" class="social-link" data-tooltip="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/santi.arenasvelez" target="_blank" class="social-link" data-tooltip="facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+        </div>
+        <div class="github-stars">
+            <p>🌟 Ayúdame a crecer dando estrella a mis repositorios</p>
+            <a href="https://github.com/Sett353" class="btn">⭐ Auto-Star Repos</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="section-title">Contáctame</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3>¡Conectemos!</h3>
+                <p>¿Tienes algún consejo para un estudiante? ¿Una oportunidad de práctica profesional? 
+                   ¿O simplemente quieres charlar sobre programación? ¡Me encantaría escucharte!</p>
+                <p>Estoy buscando oportunidades para aprender, colaborar en proyectos open source 
+                   y conseguir mi primera experiencia profesional en desarrollo.</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>arenasvelezs@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+57 300 574 5919</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Colombia</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Estudiante de Programación</span>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form" id="contact-form">
+                <div class="form-group">
+                    <label for="name">Nombre Completo</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Asunto</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" name="message" rows="6" required placeholder="¡Hola Santiago! Me gustaría..."></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Santiago - Estudiante de Programación. Todos los derechos reservados.</p>
+        <p class="creativity-note">✨ Portafolio estudiantil creado con pasión por aprender ✨</p>
+        <p class="learning-note">🚀 En constante aprendizaje y crecimiento</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
